@@ -1,0 +1,530 @@
+/* TYPOGRAPHY */
+
+@font-face {
+    font-family: TheSansB;
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/TheSaB2_.eot');
+    src: url('../fonts/TheSaB2_.eot?#iefix') format('embedded-opentype'), url('../fonts/TheSaB2_.woff') format('woff'), url('../fonts/TheSaB2_.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: TheSansB;
+    font-style: italic;
+    font-weight: 200;
+    src: url('publish/fonts/TheSaB2i.eot');
+    src: url('publish/fonts/TheSaB2i.eot?#iefix') format('embedded-opentype'), url('../fonts/TheSaB2i.woff') format('woff'), url('publish/fonts/TheSaB2i.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: TheSansB;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/TheSaB3_.eot');
+    src: url('../fonts/TheSaB3_.eot?#iefix') format('embedded-opentype'), url('../fonts/TheSaB3_.woff') format('woff'), url('../fonts/TheSaB3_.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: TheSansB;
+    font-style: italic;
+    font-weight: 300;
+    src: url('../fonts/TheSaB3i.eot');
+    src: url('../fonts/TheSaB3i.eot?#iefix') format('embedded-opentype'), url('../fonts/TheSaB3i.woff') format('woff'), url('../fonts/TheSaB3i.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: TheSansB;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/TheSaB4_.eot');
+    src: url('../fonts/TheSaB4_.eot?#iefix') format('embedded-opentype'), url('../fonts/TheSaB4_.woff') format('woff'), url('../fonts/TheSaB4_.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: TheSansB;
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/TheSaB4i.eot');
+    src: url('../fonts/TheSaB4i.eot?#iefix') format('embedded-opentype'), url('../fonts/TheSaB4i.woff') format('woff'), url('../fonts/TheSaB4i.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: TheSansB;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/TheSaB5_.eot');
+    src: url('../fonts/TheSaB5_.eot?#iefix') format('embedded-opentype'), url('../fonts/TheSaB5_.woff') format('woff'), url('../fonts/TheSaB5_.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: TheSansB;
+    font-style: italic;
+    font-weight: 500;
+    src: url('../fonts/TheSaB5i.eot');
+    src: url('../fonts/TheSaB5i.eot?#iefix') format('embedded-opentype'), url('../fonts/TheSaB5i.woff') format('woff'), url('../fonts/TheSaB5i.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: TheSansB;
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/TheSaB6_.eot');
+    src: url('../fonts/TheSaB6_.eot?#iefix') format('embedded-opentype'), url('../fonts/TheSaB6_.woff') format('woff'), url('../fonts/TheSaB6_.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: TheSansB;
+    font-style: italic;
+    font-weight: 600;
+    src: url('../fonts/TheSaB6i.eot');
+    src: url('../fonts/TheSaB6i.eot?#iefix') format('embedded-opentype'), url('../fonts/TheSaB6i.woff') format('woff'), url('../fonts/TheSaB6i.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: TheSansB;
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/TheSaB7_.eot');
+    src: url('../fonts/TheSaB7_.eot?#iefix') format('embedded-opentype'), url('../fonts/TheSaB7_.woff') format('woff'), url('../fonts/TheSaB7_.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: TheSansB;
+    font-style: italic;
+    font-weight: 700;
+    src: url('../fonts/TheSaB7i.eot');
+    src: url('../fonts/TheSaB7i.eot?#iefix') format('embedded-opentype'), url('../fonts/TheSaB7i.woff') format('woff'), url('../fonts/TheSaB7i.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: TheSansB;
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/TheSaB8_.eot');
+    src: url('../fonts/TheSaB8_.eot?#iefix') format('embedded-opentype'), url('../fonts/TheSaB8_.woff') format('woff'), url('../fonts/TheSaB8_.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: TheSansB;
+    font-style: italic;
+    font-weight: 800;
+    src: url('../fonts/TheSaB8i.eot');
+    src: url('../fonts/TheSaB8i.eot?#iefix') format('embedded-opentype'), url('../fonts/TheSaB8i.woff') format('woff'), url('../fonts/TheSaB8i.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: TheSansB;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/TheSaB9_.eot');
+    src: url('../fonts/TheSaB9_.eot?#iefix') format('embedded-opentype'), url('../fonts/TheSaB9_.woff') format('woff'), url('../fonts/TheSaB9_.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: TheSansB;
+    font-style: italic;
+    font-weight: 900;
+    src: url('../fonts/TheSaB9i.eot');
+    src: url('../fonts/TheSaB9i.eot?#iefix') format('embedded-opentype'), url('../fonts/TheSaB9i.woff') format('woff'), url('../fonts/TheSaB9i.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: TheSerifB;
+    font-style: italic;
+    font-weight: 200;
+    src: url('../fonts/TheSerifB2i.eot');
+    src: url('../fonts/TheSerifB2i.eot?#iefix') format('embedded-opentype'), url('../fonts/TheSerifB2i.woff') format('woff'), url('../fonts/TheSerifB2i.ttf') format('truetype'), , url('../fonts/TheSerifB2i.otf') format('opentype')
+}
+
+@font-face {
+    font-family: TheSerifB;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/TheSerifB3.eot');
+    src: url('../fonts/TheSerifB3.eot?#iefix') format('embedded-opentype'), url('../fonts/TheSerifB3.woff') format('woff'), url('../fonts/TheSerifB3.ttf') format('truetype')
+}
+
+h1, h2 {
+    font-family: 'TheSerifB';
+    margin: 0;
+    font-size: 400;
+}
+
+h3, h4 {
+    font-family: 'TheSerifB';
+    font-weight: 300;
+    margin: 0;
+}
+
+h5, h6 {
+    font-family: 'TheSansB';
+    font-weight: 400;
+    margin: 0;
+}
+
+
+body {
+    font-family: 'TheSansB';
+    font-weight: 400;
+}
+
+.nodisplay {
+    display: none;
+}
+
+
+/* NAVIGATION */
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    border-bottom: solid 1px #D9D9DE;
+    z-index: 30;
+    top: 0;
+}
+
+.page-title {
+    line-height: 40px;
+    padding: 5px 15px;
+    float: left;
+    cursor: default;
+}
+
+.nav-logo > img {
+    max-height: 35px;
+    margin: 7.5px 10px;
+    right: 0;
+    float: right;
+    cursor: pointer;
+}
+
+
+/* BUTTONS */
+
+.btn {
+    padding: 10px 15px;
+    background-color: #DD1122;
+    color: white;
+    border: none;
+    border-radius: 1px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.btn:hover {
+    background-color: #FF1427;
+}
+
+
+
+
+
+
+/* PAGE */
+
+/* WRAPPERS */
+
+.wrapper {
+    width: 100%;
+    margin: 20px 0;
+    position: relative;
+    float: left;
+}
+
+.wrapper > div {
+    position: relative;
+    float: left;
+}
+
+.width1, .width2, .width3, .width4, .width5 {
+    width: 100%;
+}
+
+.wrapper {
+    position: relative;
+}
+
+
+/*  //PAGE//  */
+
+
+/* WRAPPER 1 */
+
+#wrapper1 {
+    top: 50px;
+}
+
+.session-info {
+    padding: 20px;
+    float: left;
+    width: 40%;
+}
+
+.session-info > div.session-name {
+    float: left;
+    width: 200px;
+}
+
+.session-info > div.session-name > h4 {
+    line-height: 60px;
+}
+
+.session-info > div.session-timer {
+    float: left;
+    width: 60px;
+    background-color: #37DB67;
+    border-radius: 50px;
+    margin-right: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.session-info > div.session-timer > h4 {
+    line-height: 60px;
+    text-align: center;
+    color: white;
+}
+
+.session-actions {
+    float: right !important;
+    padding: 20px;
+    width: 40%;
+}
+
+.session-actions > div {
+    float: right;
+    padding: 10px;
+}
+
+.session-canceler {
+    background-color: white;
+    text-decoration: underline;
+    color: red;
+    cursor: pointer;
+}
+
+.session-finisher {
+    background-color: #37DB67;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.session-success {
+    padding: 2.5 !Important;
+    margin-right: 10px;
+}
+
+.session-finisher:active {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.checkbox-tuto  input[type="checkbox"]{
+    display : none;
+ }
+
+.checkbox-tuto .label-checkbox{
+	position : relative;
+	padding-left: 45px;
+	margin-left : 0px;
+ }
+.checkbox-tuto .label-checkbox:before{
+    content : '';
+    display : block;
+    position : absolute;
+    width : 35px;
+    height : 35px;
+    border-radius : 3px;
+    border : 1px solid #a6a6a6;
+    top : -6px;
+ }
+.checkbox-tuto .label-checkbox:after{
+    content : '';
+    display : none;
+    position : absolute;
+    width : 35px;
+    height : 35px;
+    top : -7px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-image: url('icons/check-icon.png');
+    transition-duration: 0.2s;
+ }
+.checkbox-tuto input[type="checkbox"]:checked+.label-checkbox:after{
+    display : block;
+ }
+
+fieldset {
+    border: none;
+}
+
+
+/* //WRAPPER 1// */
+
+
+/* WRAPPER 2 */
+
+#wrapper2 > div, #wrapper3 > div, #wrapper4 > div {
+    width: 45%;
+    padding: 0 1.25%;
+    float: left;
+    margin: 0 1.25%;
+}
+
+
+.product-title {
+    padding: 5%;
+    width: 60%;
+    float: left;
+    border-bottom: 1px solid #eee;
+}
+
+.product-timer {
+    width: 20%;
+    float: left;
+    padding: 5%;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+ul.process-list {
+    position: relative;
+    float: left;
+    list-style-type: none;
+    padding-left: 5%;
+    width: 90%;
+    padding-right: 5%;
+    float: left;
+}
+
+ul.process-list li {
+    padding: 10px 0;
+    line-height: 40px;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    float: left;
+}
+
+ul.process-list > li > div {
+    height: 40px;
+    width: 40px;
+    float: left;
+    background-color: #11AAFF;
+    border-radius: 50px;
+    margin-right: 15px;
+    background-image: url(icons/start-icon.png);
+    background-position: 6.5px -2px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+ul.process-list > li > div:active {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.pause-process {
+    background-image: url(icons/pause-icon.png) !important;
+    background-position: 5px -2px !important;
+    background-color: #DD1122 !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) !Important;
+}
+
+ul.process-list > li > h4 {
+    float: left;
+    font-size: 0.75em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 210px;
+}
+
+ul.process-list > li > h4:last-child {
+    float: right;
+}
+
+
+/* //WRAPPER 2// */
+
+
+.starter-overlay {
+    -webkit-filter: blur(7px);
+-moz-filter: blur(7px);
+-o-filter: blur(7px);
+-ms-filter: blur(7px);
+filter: blur(7px);
+    z-index: 5;
+}
+
+.starter-button {
+    margin-top: 30%;
+    position: fixed;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 80px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+    background-color: #37DB67;
+    color: white;
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    font-size: 26px;
+    font-family: 'TheSerifB';
+}
+
+.starter-button:active {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
+
+
+
+
+/* MIN-WIDTH 800PX */
+
+@media (min-width: 800px) {
+
+/* NAVIGATION */
+
+    .menu-wrapper {
+        max-width: 300px;
+    }
+
+
+/* LANDINGPAGE */
+
+/* WRAPPERS */
+
+
+    .width1 {
+        width: 100%;
+    }
+
+    .width2 {
+        width: 50%;
+    }
+
+    .width3 {
+        width: 33.3333333%;
+    }
+
+    .width4 {
+        width: 25%;
+    }
+
+    .width5 {
+        width: 20%;
+    }
+
+
+}
