@@ -1,4 +1,5 @@
 var viewModel= {
+  sale: ko.observable(false),
   mainTime: ko.observable(0),
   mainTimeactive: ko.observable(false),
   //Others
@@ -547,6 +548,7 @@ function saveTimes(){
             'WirelessKaufHardwareZusatzmateri': viewModel.wireless5(),
             'WirelessKuendigungMitteilenBearb': viewModel.wireless6(),
             'WirelessBeschwerdeEntgegenNehmen': viewModel.wireless7(),
+            'Sale': viewModel.sale(),
         }),
     headers: {
         "accept": "application/json;odata=verbose",

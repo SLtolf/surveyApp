@@ -51,7 +51,7 @@ body { -webkit-touch-callout: none; -webkit-text-size-adjust: none; -webkit-user
       <div class="session-success">
         <fieldset class="checkbox-tuto">
         <div>
-        <input type="checkbox" id="ios"/>
+        <input type="checkbox" id="ios" data-bind="checked: sale"/>
         <label class="label-checkbox" for="ios">Sale</label>
         </div>
         </fieldset>
@@ -258,6 +258,6 @@ body { -webkit-touch-callout: none; -webkit-text-size-adjust: none; -webkit-user
 <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
-<script src="js/app.js?v=02"></script>
+<script src="js/app.js?v=03"></script>
 </body>
 </html>
