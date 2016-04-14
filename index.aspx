@@ -258,6 +258,6 @@ body { -webkit-touch-callout: none; -webkit-text-size-adjust: none; -webkit-user
 <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
-<script src="js/app.js"></script>
+<script src="js/app.js?v=02"></script>
 </body>
 </html>
