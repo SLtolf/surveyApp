@@ -288,8 +288,7 @@ function finishSession() {
   $('.session-finisher').bind('click', function(){
     viewModel.mainTimeactive(false)
     playandstop()
-    alert('Session beendet')
-    location.reload()
+    saveTimes()
   })
 }
 
@@ -500,3 +499,65 @@ function toggleActiveStatus(){
 }
 
 ko.applyBindings(viewModel);
+
+function saveTimes(){
+  $.ajax({
+    url: _spPageContextInfo.webServerRelativeUrl +
+             "/_api/web/lists/getByTitle('SurveyResults')/items",
+    type: "POST",
+    contentType: "application/json;odata=verbose",
+    data: JSON.stringify({
+            '__metadata': {
+                'type': 'SP.Data.SurveyResultsListItem'
+            },
+            'Title': 'null',
+            'FullSessionTime': viewModel.mainTime(),
+            'OthersFullTime': viewModel.otherFullTime(),
+            'OthersBegruessungSmallTalk': viewModel.other1(),
+            'OthersKommunikationIdentifikationKunde': viewModel.other2(),
+            'OthersWartezeit': viewModel.other3(),
+            'OthersSonderaufgabenImShop': viewModel.other4(),
+            'WirelineVoiceFullTime': viewModel.wirelineVoiceFullTime(),
+            'WirelineVoiceBeratenBestellenWechseln': viewModel.wirelineVoice1(),
+            'WirelineVoiceStoerungAnalyseBehebung': viewModel.wirelineVoice2(),
+            'WirelineVoiceKaufHardwareZusatzmaterial': viewModel.wirelineVoice3(),
+            'WirelineVoiceKuendigungMitteilenBearbeiten': viewModel.wirelineVoice4(),
+            'WirelineVoiceBeschwerdenEntgegenNehmenLoesen': viewModel.wirelineVoice5(),
+            'WirelineBroadbandFullTime': viewModel.wirelineBroadbandFullTime(),
+            'WirelineBroadbandBeratenBestellenWechseln': viewModel.wirelineBroadband1(),
+            'WirelineBroadbandStoerungAnalyseBehebung': viewModelwirelineBroadband2(),
+            'WirelineBroadbandKuendigungMitteilenBearbeiten': viewModelwirelineBroadband3(),
+            'WirelineBroadbandBeschwerdenEntgegenNehmenLoesen': viewModelwirelineBroadband4(),
+            'TvFullTime': viewModel.tvFullTime(),
+            'TvBeratenBestellenWechseln': viewModel.tv1(),
+            'TvStoerungAnalyseBehebung': viewModel.tv2(),
+            'TvKaufHardwareZusatzmaterial': viewModel.tv3(),
+            'TvKuendigungMitteilenBearbeiten': viewModel.tv4(),
+            'TvBeschwerdeEntgegenNehmenLoesen': viewModel.tv5(),
+            'BundlesFullTime': viewModel.bundlesFullTime(),
+            'BundlesBeratenBestellenWechseln': viewModel.bundles1(),
+            'BundlesKaufHardwareZusatzmaterial': viewModel.bundles2(),
+            'BundlesKuendigungMitteilenBearbeiten': viewModel.bundles3(),
+            'BundlesBeschwerdeEntgegenNehmenLoesen': viewModel.bundles4(),
+            'WirelessFullTime': viewModel.wirelessFullTime(),
+            'WirelessBeratenBestellenWechseln': viewModel.wireless1(),
+            'WirelessBereitstellenProduzieren': viewModel.wireless2(),
+            'WirelessInstallierenAktivieren': viewModel.wireless3(),
+            'WirelessStoerungAnalyseBehebung': viewModel.wireless4(),
+            'WirelessKaufHardwareZusatzmaterial': viewModel.wireless5(),
+            'WirelessKuendigungMitteilenBearbeiten': viewModel.wireless6(),
+            'WirelessBeschwerdeEntgegenNehmenLoesen': viewModel.wireless7(),
+        }),
+    headers: {
+        "accept": "application/json;odata=verbose",
+        "X-RequestDigest": $("#__REQUESTDIGEST").val()
+    },
+    success: function (data) {
+      alert('Session wurde gespeichert.')
+      location.reload()
+    },
+    error: function (err) {
+        console.log(JSON.stringify(err));
+    }
+  });
+}

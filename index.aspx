@@ -1,4 +1,7 @@
-<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<%-- Die folgenden zwei Zeilen sind ASP.NET-Direktiven, die bei der Verwendung von SharePoint-Komponenten erforderlich sind. --%>
+<%@ Page language="C#" %>
+<%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<html>
 <head>
 <title>
 Shop Survey 2016
@@ -7,7 +10,8 @@ Shop Survey 2016
 <meta charset="utf-8">
 <!-- Configure viewport for mobile / tabled devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
+<link rel="shortcut icon" type="image/x-icon" href="https://www.res2.scsstatic.ch/etc/designs/emagazine/resources/favicon.ico">
+<link rel="apple-touch-icon" href="http://i.imgur.com/uy3VNER.png" />
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/styles.css">
@@ -16,9 +20,19 @@ Shop Survey 2016
 /* Disable certain interactions on touch devices */
 body { -webkit-touch-callout: none; -webkit-text-size-adjust: none; -webkit-user-select: none; -webkit-highlight: none; -webkit-tap-highlight-color: rgba(0,0,0,0); }
 </style>
+<!-- JS Sharepoint -->
+<script type="text/javascript" src="/_layouts/1033/init.js"></script>
+<script type="text/javascript" src="/_layouts/15/MicrosoftAjax.js"></script>
+<script type="text/javascript" src="/_layouts/15/sp.core.js"></script>
+<script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
+<script type="text/javascript" src="/_layouts/15/sp.js"></script>
 </head>
 
 <body>
+<!-- Sharepoint Form -->
+<form runat="server">
+    <SharePoint:FormDigest ID="FormDigest1" runat="server"></SharePoint:FormDigest>
+</form>
 <button class="starter-button">Start new Session</button>
 <div id="start-overlay" class="starter-overlay">
   <header>
